@@ -1,0 +1,41 @@
+for Spring boot project : 
+
+FROM eclipse-temurin:17-jdk-alpine
+
+VOLUME /tmp   // optional
+
+WORKDIR /app  
+
+COPY build/libs/springForDocker-0.0.1-SNAPSHOT.jar springForDocker.jar
+
+ENTRYPOINT ["java","-jar","springForDocker.jar"]
+
+
+/// * /// *  //// * /// *   /// *   /// *   /// *   /// *   /// *   /// *   /// *   /// *   /// *   /// *   /// 
+
+
+DOCKER FILE FOR HTML PROJECT
+
+FROM nginx:alpine    // host static web content using the Nginx web server
+
+COPY . /usr/share/nginx/html/test
+
+
+/// * /// *  //// * /// *   /// *   /// *   /// *   /// *   /// *   /// *   /// *   /// *   /// *   /// *   /// 
+
+
+DOCKER COMMANDS
+
+docker build -t spring . //  spring = image name, "." = current directory, -t = tag for imgage for naming.
+
+docker images // to see list of images
+
+docker ps // used to list the running containers on your system
+
+docker login // used to login into docker via CLI
+
+docker run -p 8080:80 -d spring  /// -p 8080:80 = -p used for port mapping, 8080 = localHost server , 80 = container server
+ -d = runs container in detached mode(background)
+
+
+  

@@ -1,0 +1,47 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+legend{
+    
+    height: 200px;
+    border-style: double;
+    background-color: lightgreen;
+    padding: 50px 20px 50px 20px;
+    align-items: center;
+    margin-right: 50px;
+}
+.p1{width: 200px;
+    height: 70px;
+    background-color: aqua;
+}
+button{
+    color: darkgreen;
+    background-color: black;
+}
+
+.p2{
+    background-color: black;
+    color: dark green;
+    width: 400px;
+}
+
+.i1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    color: darkgreen;
+}
+
+h1{
+    color: darkgreen;
+}
+
+.b1{
+    border-style: solid;
+   
+    border-top-left-radius: 50px 50px 50px;
+}
+
+img{
+    padding-left: 900px;
+    padding-top: -900px;
+}
